@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的第一个网页</title>
+  <style>
+  h1 {
+    color: red;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    color: gray;
+  }
+  body {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+  <h1 style="color: red;">我是小明</h1>
+  <p>今天我开始学编程了。</p>
+  <button onclick="alert('你点到我了！')">点我</button>
+  <img src="https://picsum.photos/300/200" alt="随机图片">
+  <button onclick="sayHello()">点我打招呼</button>
+<h1>加法计算器</h1>
+
+<input id="num1" type="number" placeholder="第一个数">
+<span>+</span>
+<input id="num2" type="number" placeholder="第二个数">
+
+<button onclick="calculate()">计算</button>
+
+<p id="result"></p>
+
+<script>
+  function calculate() {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var sum = (a) + (b);
+    document.getElementById("result").innerText = "结果是：" + sum;
+  }
+</script>
+</body>
+</html>
